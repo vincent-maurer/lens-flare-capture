@@ -61,19 +61,30 @@
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">Filmakademie Baden-Württemberg, Animationsinstitut<br>CVMP 2024</span>
                   </div>
-
-                  <div class="column has-text-centered">
+                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
+                         <!-- ACM PDF link -->
                       <span class="link-block">
-                        <a href="/lens-flare-capture/static/pdfs/CVMP24_Short_Paper_Lens_Flares.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark" type="application/pdf">
+                        <a href="https://dl.acm.org/doi/10.1145/3681758.3697995" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
                         <span>Paper</span>
                       </a>
                     </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <span class="link-block">
+                        <a href="/lens-flare-capture/static/pdfs/CVMP24_Short_Paper_Lens_Flares.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark" type="application/pdf">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Short Paper</span>
+                    </a>
+                  </span>
                 </a>
               </span>
             </div>
@@ -168,7 +179,22 @@
   </section>
 <!--End paper poster -->
 
-
+<!-- Supplementary video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" controls height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/sa24_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Supplementary Video. 
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
 
 <!-- Paper dataset -->
 <section class="section hero is-light">
@@ -192,7 +218,37 @@
   </div>
 </section>
 <!-- End paper dataset -->
-<!--End paper poster -->
+
+  
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+@inproceedings{10.1145/3681758.3697995,
+author = {Maurer, Vincent},
+title = {Capturing Light with Robots: A Novel Workflow for Reproducing Realistic Lens Flares},
+year = {2024},
+isbn = {9798400711404},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3681758.3697995},
+doi = {10.1145/3681758.3697995},
+abstract = {Lens flares are a common optical artifact in photography and filmmaking caused by reflections and scattering of light within a camera system. The task of creating lens flares is usually solved with 2D approaches or simulation. This research compares two alternative methods of reproducing lens flares for a production-ready compositing workflow: traditional image processing and machine learning techniques. To create the dataset, a novel approach to capturing lens flares in a grid-like manner is explored. By systematically varying the position of a light source with a motion control system, flare patterns for a diverse set of lenses are captured.},
+booktitle = {SIGGRAPH Asia 2024 Technical Communications},
+articleno = {20},
+numpages = {4},
+keywords = {Lens Flares, Visual Effects, Compositing, Motion Control, Machine Learning},
+location = {
+},
+series = {SA '24}
+}
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+  
   
   <footer class="footer">
   <div class="container">
